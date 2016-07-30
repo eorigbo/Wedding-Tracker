@@ -1,25 +1,24 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple wedding planning app that I'm putting together as a rails development refresher.
 
-Things you may want to cover:
+Things you may want to know about this app:
 
-* Ruby version
+* Ruby version: 2.3.0
 
-* System dependencies
+* System dependencies: None
 
-* Configuration
+* Configuration: Not sure what this means
 
-* Database creation
+* Database creation: Its postgres. Nothing fancy
 
-* Database initialization
+* Database initialization: See above.
 
-* How to run the test suite
+* How to run the test suite: No test suite created yet. Maybe later? 
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+* Deployment instructions: It's coming. Watch out :) 
 
 * ...
 
