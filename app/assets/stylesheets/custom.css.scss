@@ -1,3 +1,29 @@
+ /* primary button */
+.btn-primary {
+    background-color: #FFB021;
+    color: #0B0A09;
+    border-color: #FFB021;
+    border-radius: 10px;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active    {
+    background-color: #FFB021;
+    color: #FFF;
+    border-color: #FFB021;
+}
+
+hr{
+	width: 100%;
+	border: 1px solid #5E5E5E;
+	margin-top: 0px;
+	margin-left: 150px;
+}	
+
+h3{
+	color: #FFB021;
+}
+	
 		.user-name {
 		  padding: 0 !important ;  
 		  padding-left: 5px;  
