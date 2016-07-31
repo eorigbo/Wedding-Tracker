@@ -1,6 +1,16 @@
 source 'https://rubygems.org'
 
+# For user authentication setup and management
 gem 'devise'
+
+#Boostrap for rails
+gem 'twitter-bootstrap-rails'
+
+# Style devise views
+gem 'devise-bootstrap-views'
+
+# Free bootstrap themes
+gem 'bootswatch-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
