@@ -1,10 +1,10 @@
-<div class="col-lg-12">
+<div>
   <%= bootstrap_devise_error_messages! %>
   <h3><%= t('.sign_up', :default => "Sign Up") %></h3>
   <hr/>
 </div>
 
-<div class="col-md-6 ">
+<div class="col-md-6 signup-form">
     <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: { role: "form" }) do |f| %>
       <div class="form-group">
         <%= f.label :first_name, "First Name" %>
