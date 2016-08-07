@@ -37,7 +37,6 @@
     <![endif]-->
   </head>
   <body>
-
     <div class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -76,21 +75,12 @@
         <div class="col-lg-12">
           <%= bootstrap_flash %>
           <%= yield %>
+          <%= render 'partials/footer' %>
         </div>
-        
       </div><!--/row-->
-
     </div> <!-- /container -->
     
-    <div class="container">
-      <div class="row">
-          <div class="col-lg-12 footer">
-            <%= render 'partials/footer'%>
-          </div>
-      </div>
-        
-      <%= debug(params) if Rails.env.development? %>
-    </div>
-
+    
+    <%= debug(params) if Rails.env.development? %>
   </body>
 </html>
