@@ -53,3 +53,41 @@ a:focus{
 .nav.navbar-nav li a:active{
     color: #777;
 }
+
+/* nav logout link */
+li.logout a{
+  color: #0B0A09;
+  margin-top: 10px;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 5px;
+}
+li.logout a:hover,
+li.logout a:focus,
+li.logout a:active,{
+  color: #FFF;
+  background-color: #d9534f;
+}
+
+/* nav user link */
+li.username{
+  
+  
+  margin-bottom: 0px;
+  float: right;
+  padding-right: 0px;
+
+}
+li.username a{
+  margin-top: 10px;
+  padding: 5px 0px 5px 0px;
+  border: 1px solid #222222;
+  border-radius: 4px;
+  
+}
+li.username a:hover,
+li.username a:focus,
+li.username a:active,{
+  color: #FFB021;
+  background-color: #222222;
+  border-color: #FFB021;
+}
