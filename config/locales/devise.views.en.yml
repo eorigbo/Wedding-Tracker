@@ -60,7 +60,7 @@ en:
         title: "Edit %{resource}"
         we_need_your_current_password_to_confirm_your_changes: "we need your current password to confirm your changes"
         update: "Update"
-        unhappy: "Unhappy"
+        unhappy: "Not feeling the app"
         back: "Back"
       new:
         sign_up: "Create Your Account"

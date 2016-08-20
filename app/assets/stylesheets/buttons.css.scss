@@ -91,3 +91,14 @@ li.username a:active,{
   background-color: #222222;
   border-color: #FFB021;
 }
+
+/* navigation logo*/
+.navbar-inverse .navbar-brand{
+  color:#FFB021;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-brand a:focus,
+.navbar-brand a:active,{
+  color:#777;
+}
