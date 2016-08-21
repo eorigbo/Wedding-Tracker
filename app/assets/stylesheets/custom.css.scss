@@ -6,7 +6,7 @@
   padding-right: 0px;
  }
  
- .logout1{
+ .logout{
   padding-right: 0px;
   padding-left: 0px;
  }
@@ -45,5 +45,23 @@ h3{
 
 .ten-px-top-margin{
  margin-top: 10px;
+}
+
+/** Galaxy phone**/
+@media all and (max-width: 370px) and (min-width: 360px) {
+  /* put your mobile css in here */
+  .signin_logout{
+   padding-right: 0px;
+   margin-right: -8px;
+  }
+}
+
+/** Galaxy phone**/
+@media all and (max-width: 376px) and (min-width: 373px) {
+  /* put your mobile css in here */
+  .signin_logout{
+   padding-right: 0px;
+   margin-right: -2px;
+  }
 }
 	
