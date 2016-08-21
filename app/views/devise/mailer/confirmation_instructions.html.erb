@@ -1,6 +1,9 @@
+<div class="welcome-email">
 <p><%= t('.greeting', :recipient => @resource.first_name, :default => "Welcome #{@resource.first_name}!") %></p>
 
 <p><%= t('.instruction', :default => "Please confirm your account email by clicking on the link below:") %></p>
 
 <p><%= link_to t('.action', :default => "Confirm my account"),
          confirmation_url(@resource, :confirmation_token => @token, locale: I18n.locale) %></p>
+         
+</div>
