@@ -1,6 +1,6 @@
 <table>
   <tr style="height: 80px; background-color: grey;">
-    <td style="color:#FFB021; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;">
+    <td style="color:#FFB021; font-family: Helvetica Neue,Helvetica,Arial,sans-serif;">
       <h2 style="margin-left:10px">Wedding Planner App</h2>
     </td>
   </tr>
@@ -10,8 +10,8 @@
         <%= t('.greeting', :recipient => @resource.first_name, :default => "Welcome #{@resource.first_name}!") %>
       </h3>
       <%= t('.instruction', :default => "Please confirm your account email by clicking on the link below:") %>
-    
-      <%= link_to t('.action', :default => "Confirm my account"),
+      <br/>
+      <%= link_to t('.action', :default => "Confirm my account."),
              confirmation_url(@resource, :confirmation_token => @token, locale: I18n.locale) %>
     </td>
   </tr>
