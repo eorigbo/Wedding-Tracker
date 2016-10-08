@@ -7,7 +7,7 @@ Rails.application.configure do
   config.cache_classes = false
 
   # Do not eager load code on boot.(correct dev setttings)
-  config.eager_load = false
+  config.eager_load = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = {:host => 'https://completerubyonrailscourse-eorigbo.c9users.io/'}
   
