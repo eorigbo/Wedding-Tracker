@@ -13,7 +13,7 @@ Rails.application.configure do
   
   config.eager_load = true
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = {:host => 'eowedding.herokuapp.com', :protocol => 'https'}
+  config.action_mailer.default_url_options = {:host => 'completerubyonrailscourse-eorigbo.c9users.io/', :protocol => 'https'}
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
