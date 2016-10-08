@@ -1,17 +1,18 @@
-<div style="padding-left:15px; 
-            padding-top: 15px">
-  <div style="background-color: #222222;">
-    Wedding Planner App
-  </div>
-
-  <div style="padding-top: 15px">
-    <h3>
-      <%= t('.greeting', :recipient => @resource.first_name, :default => "Welcome #{@resource.first_name}!") %>
-    </h3>
-    <%= t('.instruction', :default => "Please confirm your account email by clicking on the link below:") %>
+<table>
+  <tr style="height: 20px; background-color: grey;">
+    <td>Wedding Planner App</td>
+  </tr>
+  <tr>
+    <td>
+      <h3>
+        <%= t('.greeting', :recipient => @resource.first_name, :default => "Welcome #{@resource.first_name}!") %>
+      </h3>
+      <%= t('.instruction', :default => "Please confirm your account email by clicking on the link below:") %>
+    
+      <%= link_to t('.action', :default => "Confirm my account"),
+             confirmation_url(@resource, :confirmation_token => @token, locale: I18n.locale) %>
+    </td>
+  </tr>
   
-    <%= link_to t('.action', :default => "Confirm my account"),
-           confirmation_url(@resource, :confirmation_token => @token, locale: I18n.locale) %>
-  </div>
-         
-</div>
+</table>  
+

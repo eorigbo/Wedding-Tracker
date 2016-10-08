@@ -6,10 +6,14 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
 
-  # Do not eager load code on boot.
-  config.eager_load = false
-  config.action_mailer.delivery_method = :test
-  config.action_mailer.default_url_options = {:host => 'https://completerubyonrailscourse-eorigbo.c9users.io/'}
+  # Do not eager load code on boot.(correct dev setttings)
+  #config.eager_load = false
+  #config.action_mailer.delivery_method = :test
+  #config.action_mailer.default_url_options = {:host => 'https://completerubyonrailscourse-eorigbo.c9users.io/'}
+  
+  config.eager_load = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = {:host => 'eowedding.herokuapp.com', :protocol => 'https'}
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
