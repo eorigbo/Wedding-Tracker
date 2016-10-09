@@ -6,13 +6,17 @@
   </tr>
   <tr>
     <td style="color:black">
-      <h3 style="color:#FFB021; font-size:18px; font-weight:normal; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; margin-bottom:0px;">
+      <h3 style="color:#FFB021; display:block; margin-bottom: 15px; font-size:18px; font-weight:normal; font-family:'Helvetica Neue',Helvetica,Arial,sans-serif; margin-bottom:0px;">
         <%= t('.greeting', :recipient => @resource.first_name, :default => "Welcome #{@resource.first_name}!") %>
       </h3>
+      <br/>
+      <br/>
       <%= t('.instruction', :default => "Please confirm your account email by clicking on the link below:") %>
       <br/>
+      <br/>
       <%= link_to t('.action', :default => "Confirm my account."),
-             confirmation_url(@resource, :confirmation_token => @token, locale: I18n.locale), {:style=>"color:#FFB021; text-decoration:none;"} %>
+             confirmation_url(@resource, :confirmation_token => @token, locale: I18n.locale), {:style=>"color:#FFB021; text-decoration:underline;"} %>
+      <%= t('.team', :default => "The Wedding Planner App team.") %> 
     </td>
   </tr>
   
