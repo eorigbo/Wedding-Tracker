@@ -1,18 +1,19 @@
 <table>
-  <tr style="height: 80px; background-color: grey;">
-    <td style="color:#FFB021; font-family: Helvetica Neue,Helvetica,Arial,sans-serif;">
+  <tr style="height: 50px; background-color: #222222;">
+    <td style="color:#FFB021; font-size: 18px; font-family: \"Helvetica Neue\",Helvetica,Arial,sans-serif;">
       <h2 style="margin-left:10px">Wedding Planner App</h2>
     </td>
   </tr>
   <tr>
     <td style="color:black">
-      <h3>
+      <h3 style="color:#FFB021">
         <%= t('.greeting', :recipient => @resource.first_name, :default => "Welcome #{@resource.first_name}!") %>
       </h3>
+      <hr style="border: 1px solid #5E5E5E; width: 100%; margin-top:0px; margin-bottom:15px;">
       <%= t('.instruction', :default => "Please confirm your account email by clicking on the link below:") %>
       <br/>
       <%= link_to t('.action', :default => "Confirm my account."),
-             confirmation_url(@resource, :confirmation_token => @token, locale: I18n.locale) %>
+             confirmation_url(@resource, :confirmation_token => @token, locale: I18n.locale), {:style=>"color:#FFB021; text-decoration:none;"} %>
     </td>
   </tr>
   

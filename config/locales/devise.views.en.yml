@@ -21,7 +21,7 @@ en:
         action: "Confirm my account"
         greeting: "Welcome %{recipient}!"
         instruction: "Thanks for signing up for the Wedding Planner App. Please confirm your email address by clicking on the link below:"
-        subject: "Please confirm your email address"
+        subject: "Welcome %{recipient}. Please confirm your email address"
       reset_password_instructions:
         action: "Change my password"
         greeting: "Hello %{recipient}!"
