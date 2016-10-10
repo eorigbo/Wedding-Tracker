@@ -5,7 +5,7 @@ class WeddingPlannerMailer < Devise::Mailer
 
   def confirmation_instructions(record, token, opts={})
     if record.first_name.present?
-      opts[:subject] = "Welcome #{record.first_name}, please confirm your email address"
+      opts[:subject] = "Welcome #{record.first_name}! Please confirm your email address"
     else
       opts[:subject] = "Please confirm your email address"
     end
