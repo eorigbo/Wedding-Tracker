@@ -25,9 +25,9 @@ en:
       reset_password_instructions:
         action: "Change my password"
         greeting: "Hello %{recipient},"
-        instruction: "Someone has requested a link to change your password, and you can do this through the link below:"
-        instruction_2: "If you didn't request a password reset, please ignore this email."
-        instruction_3: "Your password won't change until you access the link above and create a new one."
+        instruction: "It seems like you recently requested a password reset on the Wedding Planner App. You can reset your password through the link below:"
+        instruction_2: "If you didn't request a password reset, then please ignore this email."
+        instruction_3: "Your password hasn't been changed, and will only change when you access the link above to create a new password."
         subject: "Reset password"
       unlock_instructions:
         action: "Unlock my account"
