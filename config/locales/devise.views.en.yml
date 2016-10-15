@@ -24,11 +24,11 @@ en:
         subject: "Welcome %{recipient}. Please confirm your email address"
       reset_password_instructions:
         action: "Change my password"
-        greeting: "Hello %{recipient}!"
-        instruction: "Someone has requested a link to change your password, and you can do this through the link below."
-        instruction_2: "If you didn't request this, please ignore this email."
+        greeting: "Hello %{recipient},"
+        instruction: "Someone has requested a link to change your password, and you can do this through the link below:"
+        instruction_2: "If you didn't request a password reset, please ignore this email."
         instruction_3: "Your password won't change until you access the link above and create a new one."
-        subject: "Reset password instructions"
+        subject: "Reset password"
       unlock_instructions:
         action: "Unlock my account"
         greeting: "Hello %{recipient}!"
@@ -42,6 +42,7 @@ en:
       new:
         forgot_your_password: "Forgot your password?"
         send_me_reset_password_instructions: "Send me reset password instructions"
+        submit: "Submit"
       edit:
         change_your_password: "Change your password"
         new_password: "New password"
