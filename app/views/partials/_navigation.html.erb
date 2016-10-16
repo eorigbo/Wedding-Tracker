@@ -24,7 +24,10 @@
           
         <% else %>
           <li class="col-md-4 pull-right signin_logout">
-            <%= link_to('Sign In', new_user_session_path, class: 'btn btn-primary', title: 'Sign In') %>
+            <%= link_to('Sign In', new_user_session_path, class: 'btn btn-signin', title: 'Sign In') %>
+          </li>
+          <li class="col-md-6 pull-right signin_logout">
+            <%= link_to 'Create an Account', new_user_registration_path, class: 'btn btn-primary', title: 'Create an Account' %>
           </li>
         <% end %>
       </ul>

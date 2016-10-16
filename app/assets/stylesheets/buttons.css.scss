@@ -16,7 +16,7 @@ a:focus{
     background-color: #FFB021;
     color: #0B0A09;
     border-color: #FFB021;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -40,6 +40,22 @@ a:focus{
       background-color: #FFB021;
       color: #FFF;
       border-color: #FFB021;
+}
+
+/* nav bar sign in links */
+.nav li .btn-signin{
+  color: #FFB021;
+  background-color: #222222;
+  border-color: #FFB021;
+  margin-top: 10px;
+  padding: 5px 5px 5px 5px;
+ margin-bottom: 5px;
+}
+.nav li .btn-signin:hover,
+.nav li .btn-signin:focus,
+.nav li .btn-signin:active{
+      color: #FFF;
+      background-color: #222222;
 }
 
 /* nav links */
