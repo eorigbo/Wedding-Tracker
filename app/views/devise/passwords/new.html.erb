@@ -1,21 +1,23 @@
-<div>
-  <%= bootstrap_devise_error_messages! %>
-  <h3><%= t('.forgot_your_password', :default => 'Forgot your password?') %></h3>
-  <hr/>
-</div>
-
-<div class="col-md-6 signup-form">
-    <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post, role: "form" }) do |f| %>
-      <div class="form-group">
-        <%= f.label :email, 'Please verify yourself by providing your email address below:' %>
-        <%= f.email_field :email, autofocus: true, class: "form-control" %>
+<div class="container">
+  <div>
+    <%= bootstrap_devise_error_messages! %>
+    <h3><%= t('.forgot_your_password', :default => 'Forgot your password?') %></h3>
+    <hr/>
+  </div>
+  
+  <div class="col-md-6 signup-form">
+      <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post, role: "form" }) do |f| %>
+        <div class="form-group">
+          <%= f.label :email, 'Please verify yourself by providing your email address below:' %>
+          <%= f.email_field :email, autofocus: true, class: "form-control" %>
+        </div>
+  
+        <%= f.submit t('.submit', :default => "Submit"), class: "btn btn-primary" %>
+      <% end %>
+      <div class="devise-links">
+        <%= render "devise/shared/links" %>
       </div>
-
-      <%= f.submit t('.submit', :default => "Submit"), class: "btn btn-primary" %>
-    <% end %>
-    <div class="devise-links">
-      <%= render "devise/shared/links" %>
-    </div>
+  </div>
 </div>
   
 

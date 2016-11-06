@@ -2,9 +2,16 @@
   text-align: center;
  }
  
- .section2{
+.welcome-page-section2{
   display: block; 
   clear: both;
+ }
+ 
+ .welcome-page-section3{
+  display: block; 
+  clear: both;
+  background-color: #FFB021;
+  background-width: 100%;
  }
  
  #welcome-image{
@@ -18,11 +25,12 @@
  }
  
 .jumbotron{
-  background-image: asset-url('wedding-banner.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  padding-top: 10px;
+ background-image: asset-url('wedding-banner.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ margin-top: 30px;
+ padding-top: 10px;
   
  }
  
@@ -59,7 +67,7 @@
  
  .devise-links{
    margin-top: 10px;
-   margin-bottom: 0px;
+   margin-bottom: 20px;
    
  }
  
@@ -70,8 +78,8 @@
 
  .footer{
    margin-top: 0px;
-   margin-bottom: 30px;
-   padding-top: 10px;
+   margin-bottom: 10px;
+   padding-top: 0px;
    clear: both;
    
    hr{
@@ -84,7 +92,7 @@
 	width: 100%;
 	border: 1px solid #5E5E5E;
 	margin-top: 0px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }	
 
 h3{
