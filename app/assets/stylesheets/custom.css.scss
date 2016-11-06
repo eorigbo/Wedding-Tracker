@@ -2,6 +2,35 @@
   text-align: center;
  }
  
+ .section2{
+  display: block; 
+  clear: both;
+ }
+ 
+ #welcome-image{
+  display: block;
+  float: left;
+  height: 100%;
+ }
+ 
+ .navbar{
+  margin-bottom: 0px;
+ }
+ 
+.jumbotron{
+  background-image: asset-url('wedding-banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 10px;
+  
+ }
+ 
+ .jumbotron-subtext{
+  padding-left: 0px;
+  font-size: 20px;
+ }
+ 
 #welcome-title{
   margin-top: 10px;
  }

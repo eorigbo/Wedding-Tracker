@@ -38,13 +38,11 @@
   </head>
   <body>
     <%= render 'partials/navigation' %>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-12">
           <%= bootstrap_flash %>
           <%= yield %>
           <%= render 'partials/footer' %>
-        </div>
       </div><!--/row-->
     </div> <!-- /container -->
     
