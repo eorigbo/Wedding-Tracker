@@ -2,6 +2,14 @@
   text-align: center;
  }
  
+ .alert{
+  margin-bottom: 0px;
+ }
+ 
+ .flash-welcome{
+  margin-top: 51px;
+ }
+ 
 .welcome-page-section2{
   display: block; 
   clear: both;
@@ -29,9 +37,7 @@
  background-size: cover;
  background-repeat: no-repeat;
  height: 100vh;
- margin-top: 30px;
- padding-top: 10px;
-  
+ padding-top: 40px;
  }
  
  .jumbotron-subtext{

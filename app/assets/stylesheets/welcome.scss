@@ -1,3 +1,51 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.flash-welcome{
+  margin-top: 51px;
+ }
+ 
+.welcome-page-section2{
+  display: block; 
+  clear: both;
+ }
+ 
+ .welcome-page-section3{
+  display: block; 
+  clear: both;
+  background-color: #FFB021;
+  background-width: 100%;
+ }
+ 
+ #welcome-image{
+  display: block;
+  float: left;
+  height: 100%;
+ }
+ 
+ .jumbotron{
+ background-image: asset-url('wedding-banner.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ height: 100vh;
+ padding-top: 40px;
+ }
+ 
+ .jumbotron-subtext{
+  padding-left: 0px;
+  font-size: 20px;
+ }
+ 
+#welcome-title{
+  margin-top: 10px;
+ }
+ 
+.plan-collab-track {
+ margin-top: 10px;
+}
+ 
+ .welcome-icons{
+  color: #FFB021;
+  font-size: 12em;
+ }

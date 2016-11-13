@@ -40,8 +40,8 @@
     <%= render 'partials/navigation' %>
     <div class="container-fluid">
       <div class="row">
-        
-          <%= bootstrap_flash %>
+
+          <%= render 'layouts/flash_messages' %>
           <%= yield %>
           <%= render 'partials/footer' %>
         
