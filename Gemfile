@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 # For user authentication setup and management
 gem 'devise'
 
+# Fix for turbolinks issues
+gem 'jquery-turbolinks'
+
 #Boostrap for rails
 gem 'twitter-bootstrap-rails'
 
