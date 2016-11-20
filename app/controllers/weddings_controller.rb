@@ -24,7 +24,9 @@ class WeddingsController < ApplicationController
   # POST /weddings
   # POST /weddings.json
   def create
+    #@wedding = Wedding.new(wedding:wedding, user: current_user)
     @wedding = Wedding.new(wedding_params)
+    @wedding.user = current_user
 
     respond_to do |format|
       if @wedding.save
@@ -40,6 +42,10 @@ class WeddingsController < ApplicationController
   # PATCH/PUT /weddings/1
   # PATCH/PUT /weddings/1.json
   def update
+    if !@wedding.user 
+				@wedding.user = current_user	
+    end
+		
     respond_to do |format|
       if @wedding.update(wedding_params)
         format.html { redirect_to @wedding, notice: 'Wedding was successfully updated.' }
@@ -69,6 +75,6 @@ class WeddingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def wedding_params
-      params.require(:wedding).permit(:name, :date, :location, :expected_guests, :user_id)
+      params.require(:wedding).permit(:name, :date, :location, :expected_guests)
     end
 end
