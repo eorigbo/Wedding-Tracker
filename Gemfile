@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# jquery ui 
+gem 'jquery-ui-rails', '~> 4.2.1'
+
 # For user authentication setup and management
 gem 'devise'
 

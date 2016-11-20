@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :weddings
   devise_for :users, :controllers => {:registrations => "user/registrations"}
   root 'welcome#index'
   get 'welcome', to: 'welcome#testalert'

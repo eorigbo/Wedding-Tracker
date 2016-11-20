@@ -21,3 +21,5 @@ en:
       save: "Save %{model}"
       new: "New %{model}"
       delete: "Delete %{model}"
+      new_wedding: "Add a New Wedding"
+      edit_wedding: "Edit Wedding Details"
