@@ -1,30 +1,27 @@
+<div class="container">
 <%- model_class = Wedding -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+<div>
+  <h3>
+    <%=t '.title', :default => model_class.model_name.human.pluralize.titleize %>
+  </h3>
 </div>
-<table class="table table-striped">
-  <thead>
+<table class="table table-striped table-bordered wedding-table">
+  <thead class="thead-inverse">
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
       <th><%= model_class.human_attribute_name(:date) %></th>
       <th><%= model_class.human_attribute_name(:location) %></th>
       <th><%= model_class.human_attribute_name(:expected_guests) %></th>
-      <th><%= model_class.human_attribute_name(:user_id) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
     <% @weddings.each do |wedding| %>
       <tr>
-        <td><%= link_to wedding.id, wedding_path(wedding) %></td>
         <td><%= wedding.name %></td>
         <td><%= wedding.date %></td>
         <td><%= wedding.location %></td>
         <td><%= wedding.expected_guests %></td>
-        <td><%= wedding.user_id %></td>
-        <td><%=l wedding.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_wedding_path(wedding), :class => 'btn btn-default btn-xs' %>
@@ -42,3 +39,4 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_wedding_path,
             :class => 'btn btn-primary' %>
+</div>

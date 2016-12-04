@@ -5,7 +5,7 @@
 
 
 
-$(document).on('click', '#link2', function(e){
+$(document).on('click', '#testalertlink2', function(e){
     e.preventDefault();
     console.log("link clicked");
     var testvarout = $('#testalertvar1').data('action');
