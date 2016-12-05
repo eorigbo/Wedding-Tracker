@@ -3,6 +3,12 @@ source 'https://rubygems.org'
 # jquery ui 
 gem 'jquery-ui-rails', '~> 4.2.1'
 
+# pagination
+gem 'will_paginate', '3.0.7'
+
+#pagination bootstrap
+gem  'bootstrap-will_paginate', '0.0.10'
+
 # For user authentication setup and management
 gem 'devise'
 

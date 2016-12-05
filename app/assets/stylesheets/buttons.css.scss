@@ -4,6 +4,15 @@ a {
     
 }
 
+.new_resource{
+  color: #333;
+  padding-left: 0px;
+}
+
+.new_resource:hover{
+  color: #FFB021;
+}
+
 a:hover,
 a:focus{
     text-decoration: underline;
