@@ -22,7 +22,7 @@
   <tbody>
     <% @weddings.each do |wedding| %>
       <tr>
-        <td><%= wedding.name %></td>
+        <td><%= truncate(wedding.name,length: 80) %></td>
         <td><%= wedding.date %></td>
         <td><%= wedding.location %></td>
         <td><%= wedding.expected_guests %></td>

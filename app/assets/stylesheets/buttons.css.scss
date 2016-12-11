@@ -4,9 +4,27 @@ a {
     
 }
 
+/* pagination */
+.pagination li a,
+.pagination li a:hover,
+.pagination li a:focus,
+.pagination li a:active{
+    color: #FFB021;
+}
+
+.pagination li.active a,
+.pagination li.active a:hover,
+.pagination li.active a:focus,
+.pagination li.active a:active{
+    color: #FFF;
+    background-color: #FFB021;
+    border-color: #FFB021;
+}
+
 .new_resource{
   color: #333;
   padding-left: 0px;
+  float: right;
 }
 
 .new_resource:hover{
