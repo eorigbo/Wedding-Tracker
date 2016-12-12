@@ -2,7 +2,7 @@
   <%- model_class = Wedding -%>
   <div>
     <h3>
-      <%=t '.title', :default => [:'helpers.titles.edit_wedding', 'Edit %{model}'], 
+      <%=t 'helpers.titles.edit_wedding', :default => 'Edit %{model} Details', 
                       :model => model_class.model_name.human.titleize %>
     </h3>
     <hr/>

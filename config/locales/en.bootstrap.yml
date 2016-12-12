@@ -14,7 +14,6 @@ en:
       cancel: "Cancel"
       confirm: "Are you sure?"
       destroy: "Delete"
-      new: "+ New Wedding"
       edit: "Edit"
     titles:
       edit: "Edit %{model}"
@@ -23,3 +22,7 @@ en:
       delete: "Delete %{model}"
       new_wedding: "Add a New Wedding"
       edit_wedding: "Edit Wedding Details"
+    weddings:
+      new-wedding-button: "+ New Wedding"
+      no-wedding_html: "You haven't created any weddings yet. Please create a new wedding by clicking on the %{buttonName} button at the top right of the page, or by clicking on %{thislink}."
+      new-wedding-link: "this link"
