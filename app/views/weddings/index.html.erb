@@ -7,7 +7,7 @@
       </h3>
     </div>
     <div class="col-md-4 flush-right">
-      <%= link_to t('.new', :default => t("helpers.weddings.new-wedding-button")),
+      <%= link_to t('helpers.weddings.new-wedding-button', :default => 'New Wedding'),
               new_wedding_path,
               :class => 'btn new_resource' %>
     </div>
@@ -16,7 +16,7 @@
   <table class="table table-striped table-bordered wedding-table">
     <thead class="thead-inverse">
       <tr>
-        <th><%= model_class.human_attribute_name(:name) %></th>
+        <th> Name </th>
         <th width="20%"><%= model_class.human_attribute_name(:date) %></th>
         <th width="15%"><%= model_class.human_attribute_name(:location) %></th>
         <th width="10%"><%= model_class.human_attribute_name(:expected_guests) %></th>
@@ -27,7 +27,7 @@
     <tbody>
       <% @weddings.each do |wedding| %>
         <tr>
-          <td><%= truncate(wedding.name,length: 80) %></td>
+          <td><%= truncate((wedding.bride+'/'+wedding.groom+ ' - ' + wedding.type_id.to_s),length: 80) %></td>
           <td><%= wedding.date %></td>
           <td><%= wedding.location %></td>
           <td><%= wedding.expected_guests %></td>
