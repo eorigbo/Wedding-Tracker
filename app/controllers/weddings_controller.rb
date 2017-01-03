@@ -14,6 +14,7 @@ class WeddingsController < ApplicationController
 
   # GET /weddings/new
   def new
+    #debugger
     @wedding = Wedding.new
   end
 
@@ -75,6 +76,6 @@ class WeddingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def wedding_params
-      params.require(:wedding).permit(:bride, :groom, :type_id, :date, :location, :expected_guests)
+      params.require(:wedding).permit(:bride, :groom, :wedding_type_id, :date, :location, :expected_guests)
     end
 end

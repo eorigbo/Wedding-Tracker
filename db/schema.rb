@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161222160855) do
+ActiveRecord::Schema.define(version: 20161231211918) do
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -37,6 +37,12 @@ ActiveRecord::Schema.define(version: 20161222160855) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
+  create_table "wedding_types", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "weddings", force: :cascade do |t|
     t.date     "date"
     t.string   "location"
@@ -46,9 +52,10 @@ ActiveRecord::Schema.define(version: 20161222160855) do
     t.datetime "updated_at",      null: false
     t.text     "bride"
     t.text     "groom"
-    t.integer  "type_id"
+    t.integer  "wedding_type_id"
   end
 
   add_index "weddings", ["user_id"], name: "index_weddings_on_user_id"
+  add_index "weddings", ["wedding_type_id"], name: "index_weddings_on_wedding_type_id"
 
 end
