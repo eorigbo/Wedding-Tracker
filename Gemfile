@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# yaml db
+gem 'yaml_db'
+
 # jquery ui 
 gem 'jquery-ui-rails', '~> 4.2.1'
 

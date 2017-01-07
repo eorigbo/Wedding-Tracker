@@ -1,0 +1,62 @@
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - confirmation_token
+  - confirmed_at
+  - confirmation_sent_at
+  - unconfirmed_email
+  - created_at
+  - updated_at
+  - first_name
+  - last_name
+  records: 
+  - - 19
+    - mwil@aol.com
+    - "$2a$11$Q6Py23GNxX/uKGVNCiePN.R5Y42.BfsvYA5/tRf9Xbx08WUTKWU3m"
+    - 
+    - 
+    - 
+    - 1
+    - '2016-10-16 16:49:55.970702'
+    - '2016-10-16 16:49:55.970702'
+    - 71.197.149.136
+    - 71.197.149.136
+    - AbuERM3LqGFQnRvCig1R
+    - '2016-10-16 16:49:34.515632'
+    - '2016-10-16 16:49:03.017297'
+    - 
+    - '2016-10-16 16:49:03.016902'
+    - '2016-10-16 16:49:55.971946'
+    - Mercy
+    - Wilson
+  - - 20
+    - eorigbo@gmail.com
+    - "$2a$11$5gwPeiMXHWbR2A419UBUsOEOJ3ATg9JgoX0y8VzECl7AohtDijgAG"
+    - 0bd796d41c40cfffaf5602e1c480527124902d112a5d9048d5fcd86ad9b993df
+    - '2016-11-06 18:56:32.885380'
+    - 
+    - 41
+    - '2017-01-03 19:43:02.258960'
+    - '2017-01-01 03:16:06.473030'
+    - 72.221.46.143
+    - 72.221.46.143
+    - tQtGrcs1WaXc625a1ThY
+    - '2016-11-05 17:26:10.102569'
+    - '2016-11-05 17:25:44.136145'
+    - 
+    - '2016-11-05 17:25:44.135830'
+    - '2017-01-03 19:43:02.260116'
+    - Efesa
+    - Origbo
