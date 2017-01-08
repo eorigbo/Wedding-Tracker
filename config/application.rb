@@ -6,6 +6,12 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+initializer :after_append_asset_paths, 
+            :group => :all, 
+            :after => :append_assets_path do
+   config.assets.paths.unshift Rails.root.join("vendor", "assets", "stylesheets", "jquery-ui", "cupertino").to_s
+end
+
 module WeddingPlanner
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
