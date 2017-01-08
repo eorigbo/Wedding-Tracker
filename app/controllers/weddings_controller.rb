@@ -31,11 +31,9 @@ class WeddingsController < ApplicationController
 
     respond_to do |format|
       if @wedding.save
-        format.html { redirect_to @wedding, notice: 'Wedding was successfully created.' }
-        format.json { render :show, status: :created, location: @wedding }
+        format.html { redirect_to weddings_path, notice: 'Wedding was successfully created.' }
       else
         format.html { render :new }
-        format.json { render json: @wedding.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -49,7 +47,7 @@ class WeddingsController < ApplicationController
 		
     respond_to do |format|
       if @wedding.update(wedding_params)
-        format.html { redirect_to @wedding, notice: 'Wedding was successfully updated.' }
+        format.html { redirect_to weddings_path, notice: 'Wedding was successfully updated.' }
         format.json { render :show, status: :ok, location: @wedding }
       else
         format.html { render :edit }
