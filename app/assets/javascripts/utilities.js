@@ -76,6 +76,9 @@ $(document).ready(function(e) {
   function launchModal(modal){
     $('#modal_first_name').val("");
     $('#modal_last_name').val("");
+    if(modal == "#groomModal"){
+      $('#weddingModalLabel').text("Groom Details");
+    }
     $(modal).modal();
   }
   
