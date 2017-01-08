@@ -23,10 +23,5 @@ module WeddingPlanner
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
   end
-  
-  initializer :after_append_asset_paths, 
-            :group => :all, 
-            :after => :append_assets_path do
-   config.assets.paths.unshift Rails.root.join("vendor", "assets", "stylesheets", "jquery-ui", "cupertino").to_s
-  end
+
 end
