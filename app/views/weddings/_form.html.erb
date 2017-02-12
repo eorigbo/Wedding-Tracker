@@ -36,7 +36,8 @@
     
     <div class="form-group">
       <%= f.label :date %>
-      <%= f.text_field :date, :class => 'form-control', :id => 'datepicker' %>
+      <%= f.text_field :date, :class => 'form-control', :id => 'datepicker',
+                             :value => (@wedding.date.strftime("%A, %B %d, %Y") if @wedding.date) %>
       <%=f.error_span(:date) %>
     </div>
     <div class="form-group">

@@ -28,7 +28,7 @@
       <% @weddings.each do |wedding| %>
         <tr>
           <td><%= truncate((wedding.bride+'/'+wedding.groom+ ' - ' + wedding.name),length: 80) %></td>
-          <td><%= wedding.date %></td>
+          <td><%= wedding.date.strftime("%A, %B %d, %Y") %></td>
           <td><%= wedding.location %></td>
           <td><%= wedding.expected_guests %></td>
           <td>

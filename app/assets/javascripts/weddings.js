@@ -1,12 +1,22 @@
 /* global $ */
 
+function UcFirst(string) 
+{
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 $(document).ready(function(e) {
   //datepicker logic
   $(document).on('focus', '#datepicker', function(e) {
     e.preventDefault();
-    $('#datepicker').datepicker({dateFormat: "DD, d MM, yy"});
+    $('#datepicker').datepicker({
+      dateFormat: "DD, MM d, yy"
+      ,onSelect: function(dateText, inst) {
+        $(this).focus();
+      }
+    });
   });
-  
+
   //when the bride field is in focus...
   $(document).on('focus', '#wedding_bride', function(e) {
     e.preventDefault();
@@ -31,6 +41,7 @@ $(document).ready(function(e) {
     e.preventDefault();
     updateFieldDetails('#wedding_groom','#groomModal');
   });
+
   
   //when Enter key is pressed while in brideModal, update bride details
   $(document).on('keypress', '#brideModal',function(e) {
@@ -60,13 +71,13 @@ $(document).ready(function(e) {
       launchModal('#groomModal');
     }
   });
-
-  
-  
- 
   
  function updateFieldDetails(field,modal){
-    $(field).val($('#modal_first_name').val() + " " + $('#modal_last_name').val()); 
+    $(field).val(UcFirst($('#modal_first_name').val()) + " " + UcFirst($('#modal_last_name').val())); 
+    closeAndFocus(modal,field);
+  }
+  
+  function closeAndFocus(modal,field){
     $(modal).modal('hide');
     $('body').removeClass('modal-open');
     $('.modal-backdrop').remove();
@@ -81,11 +92,13 @@ $(document).ready(function(e) {
     } else{
       $('#weddingModalLabel').text("Bride Details");
     }
+    
+    //focus on first input text field when modal is shown
+    $("[id$=Modal]").on('shown.bs.modal', function() {
+      $('#modal_first_name').focus();
+    });  
+    
     $(modal).modal();
   }
-  
-  $("[id$=Modal]").on('shown.bs.modal', function() {
-    $('#modal_first_name').focus();
-  });
   
 });
